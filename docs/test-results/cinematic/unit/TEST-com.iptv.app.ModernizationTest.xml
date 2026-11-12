@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.iptv.app.ModernizationTest" tests="9" skipped="0" failures="0" errors="0" timestamp="2026-11-08T13:49:10.305Z" hostname="Mac" time="0.135">
+  <properties/>
+  <testcase name="reconnectBudgetAlwaysTerminatesAndRequiresExplicitReset" classname="com.iptv.app.ModernizationTest" time="0.0"/>
+  <testcase name="shortVideosAreNotMarkedCompletedWhenPlaybackStarts" classname="com.iptv.app.ModernizationTest" time="0.003"/>
+  <testcase name="sortingUsesOnlyAvailableProviderValues" classname="com.iptv.app.ModernizationTest" time="0.002"/>
+  <testcase name="historyIsBoundedAndKeepsMostRecentUniqueTitles" classname="com.iptv.app.ModernizationTest" time="0.084"/>
+  <testcase name="completedTitlesAndLiveHistoryDoNotResume" classname="com.iptv.app.ModernizationTest" time="0.001"/>
+  <testcase name="clearingHistoryKeepsFavoritesAndRemovesTrackedProgress" classname="com.iptv.app.ModernizationTest" time="0.001"/>
+  <testcase name="largeCatalogQueryProducesCorrectResultWithoutQuadraticFavoriteLookups" classname="com.iptv.app.ModernizationTest" time="0.043"/>
+  <testcase name="legacyFavoritesAndResumeKeysRemainReadable" classname="com.iptv.app.ModernizationTest" time="0.001"/>
+  <testcase name="searchMatchesAllWordsAndSupportsArabicAndGenre" classname="com.iptv.app.ModernizationTest" time="0.0"/>
+  <system-out><![CDATA[Host JVM: 50,000-item query 23.48 ms (not an Android device benchmark)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

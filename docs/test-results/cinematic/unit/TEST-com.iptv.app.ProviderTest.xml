@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.iptv.app.ProviderTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2026-11-08T13:49:10.443Z" hostname="Mac" time="0.222">
+  <properties/>
+  <testcase name="unreachableProviderReturnsActionableError" classname="com.iptv.app.ProviderTest" time="0.158"/>
+  <testcase name="rejectsInvalidAndExpiredAccounts" classname="com.iptv.app.ProviderTest" time="0.016"/>
+  <testcase name="emptyCatalogIsValidButMalformedAndDeniedResponsesFail" classname="com.iptv.app.ProviderTest" time="0.011"/>
+  <testcase name="encodesPlaybackPathSegments" classname="com.iptv.app.ProviderTest" time="0.001"/>
+  <testcase name="normalizesHostAndPreservesBasePath" classname="com.iptv.app.ProviderTest" time="0.001"/>
+  <testcase name="decodesGuideAndHandlesMissingGuide" classname="com.iptv.app.ProviderTest" time="0.006"/>
+  <testcase name="parsesLiveMovieSeriesAndMissingArtwork" classname="com.iptv.app.ProviderTest" time="0.006"/>
+  <testcase name="authUsesEncodedCredentialsAndBasePath" classname="com.iptv.app.ProviderTest" time="0.003"/>
+  <testcase name="guideDescriptionsAreOptionalAndInvalidIntervalsAreDropped" classname="com.iptv.app.ProviderTest" time="0.003"/>
+  <testcase name="parsesCategoriesAndMovieDetails" classname="com.iptv.app.ProviderTest" time="0.008"/>
+  <testcase name="parsesExplicitSeriesIdentityAndOptionalEpisodeMetadata" classname="com.iptv.app.ProviderTest" time="0.005"/>
+  <testcase name="invalidLoginInputIsRejected" classname="com.iptv.app.ProviderTest" time="0.001"/>
+  <testcase name="sortsEpisodesNumericallyAndPreservesExtensions" classname="com.iptv.app.ProviderTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

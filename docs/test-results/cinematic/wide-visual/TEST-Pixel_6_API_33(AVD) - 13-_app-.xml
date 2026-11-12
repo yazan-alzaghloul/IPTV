@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.iptv.app.AppFlowTest" tests="4" failures="0" errors="0" skipped="0" time="596.961" timestamp="2026-11-08T14:00:12" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_6_API_33(AVD) - 13" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="posterFocusReturnsToTheSameRailAfterDetails" classname="com.iptv.app.AppFlowTest" time="4.63" />
+  <testcase name="liveWorkspaceGuidePreviewAndFullscreenUseOneConnectionOwner" classname="com.iptv.app.AppFlowTest" time="577.822" />
+  <testcase name="tvSidebarExpandsWithoutLosingRemoteFocus" classname="com.iptv.app.AppFlowTest" time="7.283" />
+  <testcase name="arabicRtlLoginSupportsLargeSystemTextAndReachablePrimaryAction" classname="com.iptv.app.ScreenAdaptationTest" time="6.283" />
+</testsuite>

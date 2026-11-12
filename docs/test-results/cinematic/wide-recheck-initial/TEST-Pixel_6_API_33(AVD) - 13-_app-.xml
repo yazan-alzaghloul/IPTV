@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.iptv.app.AppFlowTest" tests="4" failures="1" errors="0" skipped="0" time="14.853" timestamp="2026-11-08T13:41:25" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_6_API_33(AVD) - 13" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="posterFocusReturnsToTheSameRailAfterDetails" classname="com.iptv.app.AppFlowTest" time="4.106">
+    <failure>java.lang.AssertionError: Failed to perform RequestFocus action.
+Reason: Expected exactly '1' node but found '2' nodes that satisfy: (TestTag = 'card_MOVIE:2')
+Nodes found:
+1) Node #330 at (l=416.0, t=526.0, r=720.0, b=1138.0)px, Tag: 'card_MOVIE:2'
+CustomActions = '[CustomAccessibilityAction(label=Add to favorites, action=com.iptv.app.PremiumUiKt$$ExternalSyntheticLambda78&#64;662359b)]'
+Focused = 'false'
+Text = '[Fixture Movie, 2008  ·  ★ 8.0]'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, OnClick, OnLongClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution]
+MergeDescendants = 'true'
+2) Node #343 at (l=368.0, t=301.0, r=672.0, b=913.0)px, Tag: 'card_MOVIE:2'
+CustomActions = '[CustomAccessibilityAction(label=Add to favorites, action=com.iptv.app.PremiumUiKt$$ExternalSyntheticLambda78&#64;5083d38)]'
+Focused = 'false'
+Text = '[Fixture Movie, 2008  ·  ★ 8.0]'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, OnClick, OnLongClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution]
+MergeDescendants = 'true'
+
+at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow(SemanticsNodeInteraction.kt:178)
+at androidx.compose.ui.test.SemanticsNodeInteraction.fetchOneOrThrow$default(SemanticsNodeInteraction.kt:150)
+at androidx.compose.ui.test.SemanticsNodeInteraction.fetchSemanticsNode(SemanticsNodeInteraction.kt:84)
+at androidx.compose.ui.test.ActionsKt.performSemanticsAction(Actions.kt:589)
+at com.iptv.app.AppFlowTest.posterFocusReturnsToTheSameRailAfterDetails(AppFlowTest.kt:408)
+</failure>
+  </testcase>
+  <testcase name="liveWorkspaceGuidePreviewAndFullscreenUseOneConnectionOwner" classname="com.iptv.app.AppFlowTest" time="4.449" />
+  <testcase name="tvSidebarExpandsWithoutLosingRemoteFocus" classname="com.iptv.app.AppFlowTest" time="3.668" />
+  <testcase name="arabicRtlLoginSupportsLargeSystemTextAndReachablePrimaryAction" classname="com.iptv.app.ScreenAdaptationTest" time="2.104" />
+</testsuite>

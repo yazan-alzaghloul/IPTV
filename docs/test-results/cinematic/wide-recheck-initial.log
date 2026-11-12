@@ -1,0 +1,143 @@
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preQaBuild UP-TO-DATE
+> Task :app:checkQaAarMetadata UP-TO-DATE
+> Task :app:generateQaResValues UP-TO-DATE
+> Task :app:mapQaSourceSetPaths
+> Task :app:generateQaResources
+> Task :app:packageQaResources
+> Task :app:createQaCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksQa UP-TO-DATE
+> Task :app:processQaMainManifest UP-TO-DATE
+> Task :app:processQaManifest UP-TO-DATE
+> Task :app:processQaManifestForPackage UP-TO-DATE
+> Task :app:javaPreCompileQa UP-TO-DATE
+> Task :app:preQaAndroidTestBuild SKIPPED
+> Task :app:parseQaLocalResources
+> Task :app:mergeQaResources
+> Task :app:checkQaAndroidTestAarMetadata UP-TO-DATE
+> Task :app:generateQaAndroidTestResValues UP-TO-DATE
+> Task :app:mapQaAndroidTestSourceSetPaths UP-TO-DATE
+> Task :app:generateQaAndroidTestResources UP-TO-DATE
+> Task :app:mergeQaAndroidTestResources UP-TO-DATE
+> Task :app:processQaAndroidTestManifest UP-TO-DATE
+> Task :app:processQaAndroidTestResources UP-TO-DATE
+> Task :app:javaPreCompileQaAndroidTest UP-TO-DATE
+> Task :app:mergeQaShaders UP-TO-DATE
+> Task :app:compileQaShaders NO-SOURCE
+> Task :app:generateQaAssets UP-TO-DATE
+> Task :app:mergeQaAssets UP-TO-DATE
+> Task :app:compressQaAssets UP-TO-DATE
+> Task :app:checkQaDuplicateClasses UP-TO-DATE
+> Task :app:desugarQaFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexQa UP-TO-DATE
+> Task :app:mergeLibDexQa UP-TO-DATE
+> Task :app:mergeQaJniLibFolders UP-TO-DATE
+> Task :app:mergeQaNativeLibs UP-TO-DATE
+> Task :app:stripQaDebugSymbols UP-TO-DATE
+> Task :app:validateSigningQa UP-TO-DATE
+> Task :app:writeQaAppMetadata UP-TO-DATE
+> Task :app:writeQaSigningConfigVersions UP-TO-DATE
+> Task :app:mergeQaAndroidTestShaders UP-TO-DATE
+> Task :app:compileQaAndroidTestShaders NO-SOURCE
+> Task :app:generateQaAndroidTestAssets UP-TO-DATE
+> Task :app:mergeQaAndroidTestAssets UP-TO-DATE
+> Task :app:compressQaAndroidTestAssets UP-TO-DATE
+> Task :app:checkQaAndroidTestDuplicateClasses UP-TO-DATE
+> Task :app:desugarQaAndroidTestFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexQaAndroidTest UP-TO-DATE
+> Task :app:mergeLibDexQaAndroidTest UP-TO-DATE
+> Task :app:mergeQaAndroidTestJniLibFolders UP-TO-DATE
+> Task :app:mergeQaAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripQaAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningQaAndroidTest UP-TO-DATE
+> Task :app:writeQaAndroidTestSigningConfigVersions UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:checkDebugAarMetadata UP-TO-DATE
+> Task :app:generateDebugResValues UP-TO-DATE
+> Task :app:mapDebugSourceSetPaths
+> Task :app:generateDebugResources
+> Task :app:packageDebugResources
+> Task :app:createDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksDebug UP-TO-DATE
+> Task :app:processDebugMainManifest UP-TO-DATE
+> Task :app:processDebugManifest UP-TO-DATE
+> Task :app:processDebugManifestForPackage UP-TO-DATE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+> Task :app:preDebugUnitTestBuild UP-TO-DATE
+> Task :app:javaPreCompileDebugUnitTest UP-TO-DATE
+> Task :app:extractProguardFiles UP-TO-DATE
+> Task :app:parseDebugLocalResources
+> Task :app:mergeDebugResources
+> Task :app:processQaResources
+> Task :app:processDebugResources
+> Task :app:compileQaKotlin
+> Task :app:compileDebugKotlin
+> Task :app:compileQaJavaWithJavac NO-SOURCE
+> Task :app:bundleQaClassesToCompileJar
+> Task :app:dexBuilderQa
+> Task :app:mergeQaGlobalSynthetics UP-TO-DATE
+> Task :app:processQaJavaRes UP-TO-DATE
+> Task :app:mergeQaJavaResource UP-TO-DATE
+> Task :app:compileDebugJavaWithJavac NO-SOURCE
+> Task :app:processDebugJavaRes UP-TO-DATE
+> Task :app:compileQaAndroidTestKotlin
+> Task :app:generateDebugLintReportModel
+> Task :app:compileQaAndroidTestJavaWithJavac NO-SOURCE
+> Task :app:dexBuilderQaAndroidTest UP-TO-DATE
+> Task :app:mergeProjectDexQaAndroidTest UP-TO-DATE
+> Task :app:mergeQaAndroidTestGlobalSynthetics UP-TO-DATE
+> Task :app:processQaAndroidTestJavaRes UP-TO-DATE
+> Task :app:mergeQaAndroidTestJavaResource UP-TO-DATE
+> Task :app:packageQaAndroidTest UP-TO-DATE
+> Task :app:createQaAndroidTestApkListingFileRedirect UP-TO-DATE
+> Task :app:bundleDebugClassesToRuntimeJar
+> Task :app:bundleDebugClassesToCompileJar
+> Task :app:mergeProjectDexQa
+> Task :app:generateDebugUnitTestLintModel
+> Task :app:compileDebugUnitTestKotlin
+> Task :app:compileDebugUnitTestJavaWithJavac NO-SOURCE
+> Task :app:processDebugUnitTestJavaRes UP-TO-DATE
+> Task :app:testDebugUnitTest
+> Task :app:packageQa
+> Task :app:createQaApkListingFileRedirect UP-TO-DATE
+> Task :app:lintAnalyzeDebugUnitTest
+> Task :app:lintAnalyzeDebug
+
+> Task :app:connectedQaAndroidTest
+Starting 4 tests on Pixel_6_API_33(AVD) - 13
+
+com.iptv.app.AppFlowTest > posterFocusReturnsToTheSameRailAfterDetails[Pixel_6_API_33(AVD) - 13] [31mFAILED [0m
+	java.lang.AssertionError: Failed to perform RequestFocus action.
+	Reason: Expected exactly '1' node but found '2' nodes that satisfy: (TestTag = 'card_MOVIE:2')
+
+Pixel_6_API_33(AVD) - 13 Tests 2/4 completed. (0 skipped) (1 failed)
+Finished 4 tests on Pixel_6_API_33(AVD) - 13
+
+> Task :app:connectedQaAndroidTest
+Tests on Pixel_6_API_33(AVD) - 13 failed: There was 1 failure(s).
+
+> Task :app:connectedQaAndroidTest FAILED
+
+[Incubating] Problems report is available at: file:///Users/yazanalzaghloul/Documents/ChatGPT/IPTV/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:connectedQaAndroidTest'.
+> There were failing tests. See the report at: file:///Users/yazanalzaghloul/Documents/ChatGPT/IPTV/app/build/reports/androidTests/connected/qa/index.html
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 34s
+90 actionable tasks: 28 executed, 62 up-to-date

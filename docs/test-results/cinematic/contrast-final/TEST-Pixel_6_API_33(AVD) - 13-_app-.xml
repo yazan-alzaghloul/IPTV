@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.iptv.app.AppFlowTest" tests="3" failures="0" errors="0" skipped="0" time="17.749" timestamp="2026-11-08T13:49:35" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_6_API_33(AVD) - 13" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="universalSearchFindsContentAcrossKinds" classname="com.iptv.app.AppFlowTest" time="5.09" />
+  <testcase name="loginValidationAndCatalogFavoritesEpisodesAndCleanup" classname="com.iptv.app.AppFlowTest" time="10.121" />
+  <testcase name="arabicRtlLoginSupportsLargeSystemTextAndReachablePrimaryAction" classname="com.iptv.app.ScreenAdaptationTest" time="2.046" />
+</testsuite>

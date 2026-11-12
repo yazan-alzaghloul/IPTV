@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.iptv.app.AppFlowTest" tests="18" failures="1" errors="0" skipped="0" time="232.309" timestamp="2026-11-08T13:40:04" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_6_API_33(AVD) - 13" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="moviesLandingDetailsAndPagedBrowseUseProviderData" classname="com.iptv.app.AppFlowTest" time="23.976" />
+  <testcase name="pictureInPictureKeepsTheVideoActivityAliveAndReturnsToDetails" classname="com.iptv.app.AppFlowTest" time="16.9" />
+  <testcase name="posterFocusReturnsToTheSameRailAfterDetails" classname="com.iptv.app.AppFlowTest" time="24.808">
+    <failure>androidx.compose.ui.test.ComposeTimeoutException: Condition still not satisfied after 15000 ms
+at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitUntil(ComposeUiTest.android.kt:755)
+at androidx.compose.ui.test.junit4.AndroidComposeTestRule.waitUntil(AndroidComposeTestRule.android.kt:362)
+at com.iptv.app.AppFlowTest.waitFor(AppFlowTest.kt:114)
+at com.iptv.app.AppFlowTest.posterFocusReturnsToTheSameRailAfterDetails(AppFlowTest.kt:396)
+</failure>
+  </testcase>
+  <testcase name="universalSearchFindsContentAcrossKinds" classname="com.iptv.app.AppFlowTest" time="11.782" />
+  <testcase name="catalogFailureCanBeRetriedAndRemoteFocusWorks" classname="com.iptv.app.AppFlowTest" time="10.98" />
+  <testcase name="savedCredentialsAreEncryptedAndRestored" classname="com.iptv.app.AppFlowTest" time="7.326" />
+  <testcase name="channelSwitchKeepsTheSamePlayerAndAspectControlsWork" classname="com.iptv.app.AppFlowTest" time="9.795" />
+  <testcase name="loginValidationAndCatalogFavoritesEpisodesAndCleanup" classname="com.iptv.app.AppFlowTest" time="30.227" />
+  <testcase name="liveWorkspaceGuidePreviewAndFullscreenUseOneConnectionOwner" classname="com.iptv.app.AppFlowTest" time="13.707" />
+  <testcase name="onDemandPlaybackPauseSeekResumeAndRetry" classname="com.iptv.app.AppFlowTest" time="21.05" />
+  <testcase name="homeAndAppearanceSettingsUseRealCatalogAndPersist" classname="com.iptv.app.AppFlowTest" time="19.927" />
+  <testcase name="liveHlsPlaybackAndBackNavigation" classname="com.iptv.app.AppFlowTest" time="9.868" />
+  <testcase name="seriesProgressWatchedFlagsAndSeasonSelectionPersist" classname="com.iptv.app.AppFlowTest" time="18.172" />
+  <testcase name="tvSidebarExpandsWithoutLosingRemoteFocus" classname="com.iptv.app.AppFlowTest" time="3.838" />
+  <testcase name="nextPreviousAndAutoplayEpisodesReuseTheAuthenticatedPlayer" classname="com.iptv.app.AppFlowTest" time="5.71" />
+  <testcase name="arabicRtlLoginSupportsLargeSystemTextAndReachablePrimaryAction" classname="com.iptv.app.ScreenAdaptationTest" time="2.022" />
+  <testcase name="queriesArePagedLiteralFilteredAndProviderIsolated" classname="com.iptv.app.VodCatalogTest" time="0.031" />
+  <testcase name="fiftyThousandRowsUseBoundedPagesAndSurviveCacheReopen" classname="com.iptv.app.VodCatalogTest" time="1.418" />
+</testsuite>

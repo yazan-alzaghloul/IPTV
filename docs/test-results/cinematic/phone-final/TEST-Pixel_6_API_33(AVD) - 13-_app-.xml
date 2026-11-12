@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<testsuite name="com.iptv.app.AppFlowTest" tests="18" failures="0" errors="0" skipped="1" time="76.577" timestamp="2026-11-08T13:46:12" hostname="localhost">
+  <properties>
+    <property name="device" value="Pixel_6_API_33(AVD) - 13" />
+    <property name="flavor" value="" />
+    <property name="project" value=":app" />
+  </properties>
+  <testcase name="moviesLandingDetailsAndPagedBrowseUseProviderData" classname="com.iptv.app.AppFlowTest" time="6.392" />
+  <testcase name="pictureInPictureKeepsTheVideoActivityAliveAndReturnsToDetails" classname="com.iptv.app.AppFlowTest" time="4.408" />
+  <testcase name="posterFocusReturnsToTheSameRailAfterDetails" classname="com.iptv.app.AppFlowTest" time="3.96" />
+  <testcase name="universalSearchFindsContentAcrossKinds" classname="com.iptv.app.AppFlowTest" time="4.328" />
+  <testcase name="catalogFailureCanBeRetriedAndRemoteFocusWorks" classname="com.iptv.app.AppFlowTest" time="4.118" />
+  <testcase name="savedCredentialsAreEncryptedAndRestored" classname="com.iptv.app.AppFlowTest" time="3.049" />
+  <testcase name="channelSwitchKeepsTheSamePlayerAndAspectControlsWork" classname="com.iptv.app.AppFlowTest" time="4.403" />
+  <testcase name="loginValidationAndCatalogFavoritesEpisodesAndCleanup" classname="com.iptv.app.AppFlowTest" time="9.74" />
+  <testcase name="liveWorkspaceGuidePreviewAndFullscreenUseOneConnectionOwner" classname="com.iptv.app.AppFlowTest" time="4.142" />
+  <testcase name="onDemandPlaybackPauseSeekResumeAndRetry" classname="com.iptv.app.AppFlowTest" time="4.329" />
+  <testcase name="homeAndAppearanceSettingsUseRealCatalogAndPersist" classname="com.iptv.app.AppFlowTest" time="4.173" />
+  <testcase name="liveHlsPlaybackAndBackNavigation" classname="com.iptv.app.AppFlowTest" time="3.448" />
+  <testcase name="seriesProgressWatchedFlagsAndSeasonSelectionPersist" classname="com.iptv.app.AppFlowTest" time="4.89" />
+  <testcase name="tvSidebarExpandsWithoutLosingRemoteFocus" classname="com.iptv.app.AppFlowTest" time="1.154">
+    <skipped />
+  </testcase>
+  <testcase name="nextPreviousAndAutoplayEpisodesReuseTheAuthenticatedPlayer" classname="com.iptv.app.AppFlowTest" time="9.997" />
+  <testcase name="arabicRtlLoginSupportsLargeSystemTextAndReachablePrimaryAction" classname="com.iptv.app.ScreenAdaptationTest" time="1.734" />
+  <testcase name="queriesArePagedLiteralFilteredAndProviderIsolated" classname="com.iptv.app.VodCatalogTest" time="0.0" />
+  <testcase name="fiftyThousandRowsUseBoundedPagesAndSurviveCacheReopen" classname="com.iptv.app.VodCatalogTest" time="1.512" />
+</testsuite>

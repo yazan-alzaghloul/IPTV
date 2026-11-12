@@ -1,0 +1,44 @@
+<resources>
+    <string name="back_to">الرجوع إلى %1$s</string>
+    <string name="search_kind">البحث في %1$s</string>
+    <string name="browse_kind">تصفح %1$s</string>
+    <string name="discover_kind">اكتشف %1$s</string>
+    <string name="all_kind">جميع %1$s</string>
+    <string name="season_number">الموسم %1$d</string>
+    <string name="episode_heading">الموسم %1$d · الحلقة %2$d   %3$s</string>
+    <string name="continue_episode">متابعة المشاهدة — الموسم %1$d، الحلقة %2$d</string>
+    <string name="next_episode_heading">التالي — الموسم %1$d، الحلقة %2$d</string>
+    <string name="start_episode_heading">ابدأ — الموسم %1$d، الحلقة %2$d</string>
+    <string name="provider_rating_value">تقييم المزود · %1$s</string>
+    <string name="rating_value">التقييم %1$s</string>
+    <string name="favorite_channel">إضافة %1$s إلى المفضلة</string>
+    <string name="unfavorite_channel">إزالة %1$s من المفضلة</string>
+    <string name="current_time">الوقت الحالي %1$s</string>
+    <string name="duration_minutes_seconds">%1$d دقيقة و%2$d ثانية</string>
+    <string name="resume_minutes">المتابعة عند الدقيقة %1$d</string>
+    <string name="no_kind">لا توجد %1$s متاحة. حدّث المحتوى من المزود للمحاولة مجدداً.</string>
+    <string name="content_rating_value">تصنيف المحتوى · %1$s</string>
+    <string name="season_count">%1$d موسم</string>
+    <string name="lock_controls">قفل عناصر التحكم</string>
+    <string name="unlock_controls">فتح عناصر التحكم</string>
+    <string name="text_size">حجم النص · %1$d%%</string>
+    <string name="page_range">%1$d–%2$d من %3$d</string>
+    <string name="episode_code">الموسم %1$d · الحلقة %2$d</string>
+    <string name="provider_video">معلومات الفيديو من المزود: %1$s</string>
+    <string name="provider_container">حاوية المزود: %1$s\nيمكن اختيار الصوت والترجمة والجودة من المشغّل عندما يوفرها البث.</string>
+    <string name="provider_http_error">أعاد المزود رمز HTTP %1$s. حاول لاحقاً.</string>
+    <string name="subscription_state">حالة الاشتراك: %1$s. تواصل مع مزود الخدمة.</string>
+    <string name="reconnecting">انقطع الاتصال. جارٍ إعادة الاتصال (%1$d/2)…</string>
+    <string name="autoplay_on">التشغيل التلقائي: مفعّل</string>
+    <string name="autoplay_off">التشغيل التلقائي: متوقف</string>
+    <string name="video_info_missing">معلومات الفيديو غير متاحة</string>
+    <string name="video_track_number">مسار الفيديو %1$d</string>
+    <string name="player_diagnostics">%1$s\n%2$d × %3$d\nالمخزّن مؤقتاً: %4$d ثانية\nمحاولات إعادة الاتصال: %5$d/2\nوضع المصدر: %6$s</string>
+    <string name="about_diagnostics">IPTV %1$s · Android %2$s\nالشبكة: %3$s · ذاكرة التطبيق: %4$d م.ب\nمشغّل Media3 · تخزين حساب مشفّر · دون تحليلات</string>
+    <string name="network_validated">متصلة</string>
+    <string name="network_offline">غير متصلة أو غير مؤكدة</string>
+    <string name="related_movies">أفلام ذات صلة من مزود الخدمة</string>
+    <string name="related_series">مسلسلات ذات صلة من مزود الخدمة</string>
+    <plurals name="channel_count"><item quantity="zero">لا توجد قنوات</item><item quantity="one">قناة واحدة</item><item quantity="two">قناتان</item><item quantity="few">%d قنوات</item><item quantity="many">%d قناة</item><item quantity="other">%d قناة</item></plurals>
+    <plurals name="title_count"><item quantity="zero">لا توجد محتويات</item><item quantity="one">محتوى واحد</item><item quantity="two">محتويان</item><item quantity="few">%d محتويات</item><item quantity="many">%d محتوى</item><item quantity="other">%d محتوى</item></plurals>
+</resources>

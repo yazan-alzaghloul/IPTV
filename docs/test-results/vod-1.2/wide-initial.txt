@@ -1,0 +1,26 @@
+
+com.iptv.app.AppFlowTest:s_glBindAttribLocation: bind attrib 0 name position
+s_glBindAttribLocation: bind attrib 1 name color
+s_glBindAttribLocation: bind attrib 2 name localCoord
+
+Error in moviesLandingDetailsAndPagedBrowseUseProviderData(com.iptv.app.AppFlowTest):
+androidx.compose.ui.test.ComposeTimeoutException: Condition still not satisfied after 15000 ms
+	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitUntil(ComposeUiTest.android.kt:755)
+	at androidx.compose.ui.test.junit4.AndroidComposeTestRule.waitUntil(AndroidComposeTestRule.android.kt:362)
+	at com.iptv.app.AppFlowTest.waitFor(AppFlowTest.kt:111)
+	at com.iptv.app.AppFlowTest.moviesLandingDetailsAndPagedBrowseUseProviderData(AppFlowTest.kt:283)
+...........
+
+Time: 243.358
+There was 1 failure:
+1) moviesLandingDetailsAndPagedBrowseUseProviderData(com.iptv.app.AppFlowTest)
+androidx.compose.ui.test.ComposeTimeoutException: Condition still not satisfied after 15000 ms
+	at androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitUntil(ComposeUiTest.android.kt:755)
+	at androidx.compose.ui.test.junit4.AndroidComposeTestRule.waitUntil(AndroidComposeTestRule.android.kt:362)
+	at com.iptv.app.AppFlowTest.waitFor(AppFlowTest.kt:111)
+	at com.iptv.app.AppFlowTest.moviesLandingDetailsAndPagedBrowseUseProviderData(AppFlowTest.kt:283)
+
+FAILURES!!!
+Tests run: 12,  Failures: 1
+
+

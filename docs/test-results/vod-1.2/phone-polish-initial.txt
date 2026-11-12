@@ -1,0 +1,45 @@
+
+com.iptv.app.AppFlowTest:.
+Error in seriesProgressWatchedFlagsAndSeasonSelectionPersist(com.iptv.app.AppFlowTest):
+java.lang.AssertionError: Failed to assert the following: (Focused = 'true')
+Semantics of the node:
+Node #730 at (l=310.0, t=1213.0, r=546.0, b=1297.0)px
+Focused = 'false'
+Role = 'Checkbox'
+Selected = 'false'
+Text = '[Season 2]'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, OnClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution]
+MergeDescendants = 'true'
+Has 1 sibling
+Selector used: (Text + InputText + EditableText contains 'Season 2' (ignoreCase: false))
+
+	at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:264)
+	at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:254)
+	at androidx.compose.ui.test.AssertionsKt.assertIsFocused(Assertions.kt:117)
+	at com.iptv.app.AppFlowTest.seriesProgressWatchedFlagsAndSeasonSelectionPersist(AppFlowTest.kt:314)
+
+
+Time: 62.332
+There was 1 failure:
+1) seriesProgressWatchedFlagsAndSeasonSelectionPersist(com.iptv.app.AppFlowTest)
+java.lang.AssertionError: Failed to assert the following: (Focused = 'true')
+Semantics of the node:
+Node #730 at (l=310.0, t=1213.0, r=546.0, b=1297.0)px
+Focused = 'false'
+Role = 'Checkbox'
+Selected = 'false'
+Text = '[Season 2]'
+Actions = [ClearTextSubstitution, GetTextLayoutResult, OnClick, RequestFocus, SetTextSubstitution, ShowTextSubstitution]
+MergeDescendants = 'true'
+Has 1 sibling
+Selector used: (Text + InputText + EditableText contains 'Season 2' (ignoreCase: false))
+
+	at androidx.compose.ui.test.AssertionsKt.assert(Assertions.kt:264)
+	at androidx.compose.ui.test.AssertionsKt.assert$default(Assertions.kt:254)
+	at androidx.compose.ui.test.AssertionsKt.assertIsFocused(Assertions.kt:117)
+	at com.iptv.app.AppFlowTest.seriesProgressWatchedFlagsAndSeasonSelectionPersist(AppFlowTest.kt:314)
+
+FAILURES!!!
+Tests run: 2,  Failures: 1
+
+

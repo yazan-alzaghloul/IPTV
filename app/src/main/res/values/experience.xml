@@ -1,0 +1,44 @@
+<resources>
+    <string name="back_to">Back to %1$s</string>
+    <string name="search_kind">Search %1$s</string>
+    <string name="browse_kind">Browse %1$s</string>
+    <string name="discover_kind">Discover %1$s</string>
+    <string name="all_kind">All %1$s</string>
+    <string name="season_number">Season %1$d</string>
+    <string name="episode_heading">S%1$d · E%2$d   %3$s</string>
+    <string name="continue_episode">Continue watching — Season %1$d, Episode %2$d</string>
+    <string name="next_episode_heading">Next — Season %1$d, Episode %2$d</string>
+    <string name="start_episode_heading">Start — Season %1$d, Episode %2$d</string>
+    <string name="provider_rating_value">Provider rating · %1$s</string>
+    <string name="rating_value">Rating %1$s</string>
+    <string name="favorite_channel">Favorite %1$s</string>
+    <string name="unfavorite_channel">Remove %1$s from favorites</string>
+    <string name="current_time">Current time %1$s</string>
+    <string name="duration_minutes_seconds">%1$d min %2$d sec</string>
+    <string name="resume_minutes">Resume at %1$d min</string>
+    <string name="no_kind">No %1$s available. Refresh your provider to try again.</string>
+    <string name="content_rating_value">Content rating · %1$s</string>
+    <string name="season_count">%1$d seasons</string>
+    <string name="lock_controls">Lock controls</string>
+    <string name="unlock_controls">Unlock controls</string>
+    <string name="text_size">Text size · %1$d%%</string>
+    <string name="page_range">%1$d–%2$d of %3$d</string>
+    <string name="episode_code">S%1$d · E%2$d</string>
+    <string name="provider_video">Provider-reported video: %1$s</string>
+    <string name="provider_container">Provider container: %1$s\nAudio, subtitles and quality can be selected from the player when supplied by the stream.</string>
+    <string name="provider_http_error">Provider returned HTTP %1$s. Try again later.</string>
+    <string name="subscription_state">Subscription is %1$s. Contact your provider.</string>
+    <string name="reconnecting">Connection interrupted. Reconnecting (%1$d/2)…</string>
+    <string name="autoplay_on">Autoplay: on</string>
+    <string name="autoplay_off">Autoplay: off</string>
+    <string name="video_info_missing">Video information unavailable</string>
+    <string name="video_track_number">Video track %1$d</string>
+    <string name="player_diagnostics">%1$s\n%2$d × %3$d\nBuffered: %4$d s\nReconnect attempts: %5$d/2\nSource mode: %6$s</string>
+    <string name="about_diagnostics">IPTV %1$s · Android %2$s\nNetwork: %3$s · App heap class: %4$d MB\nMedia3 player · Encrypted account storage · No analytics</string>
+    <string name="network_validated">validated</string>
+    <string name="network_offline">offline or unvalidated</string>
+    <string name="related_movies">Related movies from your provider</string>
+    <string name="related_series">Related series from your provider</string>
+    <plurals name="channel_count"><item quantity="one">%d channel</item><item quantity="other">%d channels</item></plurals>
+    <plurals name="title_count"><item quantity="one">%d title</item><item quantity="other">%d titles</item></plurals>
+</resources>
