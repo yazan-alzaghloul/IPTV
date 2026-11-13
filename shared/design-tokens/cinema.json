@@ -1,0 +1,13 @@
+{
+  "name": "IPTV Cinema",
+  "version": 1,
+  "color": {
+    "dark": { "background": "#080B12", "navigation": "#151B28", "card": "#151B28", "elevated": "#242D3E", "accent": "#7C3AED", "cyan": "#38BDF8", "text": "#F8FAFC", "secondary": "#A1A1AA", "accentText": "#C4B5FD", "positive": "#22C55E", "live": "#EF4444" },
+    "light": { "background": "#F4F5FA", "card": "#FFFFFF", "elevated": "#E6E9F0", "accent": "#6D28D9", "ocean": "#006875", "text": "#111827", "secondary": "#455267", "accentText": "#5B21B6" }
+  },
+  "spacing": [4, 8, 12, 16, 24, 32],
+  "radius": { "poster": 12, "hero": 16, "dialog": 24 },
+  "typography": { "family": "system sans serif", "display": 32, "title": 22, "body": 17, "caption": 12, "scalesWithSystem": true },
+  "motion": { "enabledByDefault": false, "heroRotationSeconds": 12, "transitionMilliseconds": 300, "respectReducedMotion": true },
+  "layout": { "pagePadding": 24, "posterAspectRatio": "2:3", "liveAspectRatio": "16:9", "catalogPageSize": 48, "minimumTouchTargetIOS": 44, "minimumTouchTargetAndroid": 48 }
+}

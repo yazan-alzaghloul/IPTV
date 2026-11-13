@@ -1,0 +1,2 @@
+"NSMicrophoneUsageDescription" = "استخدم الميكروفون عند اختيار البحث الصوتي للعثور على عناوين في مكتبتك.";
+"NSSpeechRecognitionUsageDescription" = "حوّل البحث المنطوق إلى نص للعثور على عناوين في مكتبة المزود.";

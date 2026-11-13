@@ -1,0 +1,14 @@
+name: Shared contracts
+on:
+  push:
+    paths: ['shared/**', 'scripts/check-contracts.py', '.github/workflows/contracts.yml']
+  pull_request:
+    paths: ['shared/**', 'scripts/check-contracts.py', '.github/workflows/contracts.yml']
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - run: python3 scripts/check-contracts.py

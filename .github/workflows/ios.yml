@@ -1,0 +1,35 @@
+name: iOS
+on:
+  push:
+    paths: ['apps/ios/**', 'scripts/*ios*', 'scripts/fixture-provider.py', 'shared/api-contracts/**', 'shared/design-tokens/**', 'shared/test-fixtures/**', '.github/workflows/ios.yml']
+  pull_request:
+    paths: ['apps/ios/**', 'scripts/*ios*', 'scripts/fixture-provider.py', 'shared/api-contracts/**', 'shared/design-tokens/**', 'shared/test-fixtures/**', '.github/workflows/ios.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@v7
+      - name: Resolve local Swift package
+        run: swift package --package-path apps/ios/Core resolve
+      - name: Swift style checks
+        run: xcrun swift-format lint --strict --recursive apps/ios/App apps/ios/Features apps/ios/Core/Sources/IPTVCore apps/ios/Core/Tests apps/ios/AppTests apps/ios/UITests
+      - name: Core unit and HTTP integration tests
+        run: scripts/build-ios.sh core-test
+      - name: Choose an installed iPhone simulator
+        run: |
+          DEVICE_ID=$(xcrun simctl list devices available -j | python3 -c 'import json,sys; d=json.load(sys.stdin); print(next(x["udid"] for group in d["devices"].values() for x in group if "iPhone" in x["name"]))')
+          echo "IOS_DESTINATION=platform=iOS Simulator,id=$DEVICE_ID" >> "$GITHUB_ENV"
+          mkdir -p .validation
+      - name: Native tests and fixture app flow
+        run: scripts/test-ios-fixture.sh -resultBundlePath .validation/ios-tests.xcresult
+      - name: Analyze
+        run: scripts/build-ios.sh analyze
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: ios-test-results
+          include-hidden-files: true
+          path: .validation/*.xcresult

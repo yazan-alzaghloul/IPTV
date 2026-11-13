@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "IPTV appearance export (credentials excluded, maximum 32768 bytes)",
+  "type": "object",
+  "required": ["theme", "accent", "fontScale", "highContrast", "motion", "heroRotation", "landing", "hiddenRows"],
+  "properties": {
+    "theme": { "enum": ["dark", "light"] }, "accent": { "enum": ["violet", "cyan"] },
+    "fontScale": { "type": "number", "minimum": 0.85, "maximum": 1.4 },
+    "highContrast": { "type": "boolean" }, "motion": { "type": "boolean" }, "heroRotation": { "type": "boolean" },
+    "landing": { "enum": ["HOME", "LIVE", "MOVIES", "SERIES"] },
+    "hiddenRows": { "type": "array", "uniqueItems": true, "maxItems": 6, "items": { "type": "string" } }
+  },
+  "additionalProperties": false
+}

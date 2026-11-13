@@ -1,0 +1,10 @@
+{
+  "theme": "dark",
+  "accent": "violet",
+  "fontScale": 1.0,
+  "highContrast": false,
+  "motion": false,
+  "heroRotation": false,
+  "landing": "HOME",
+  "hiddenRows": []
+}

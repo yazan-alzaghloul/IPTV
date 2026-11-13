@@ -1,0 +1,105 @@
+> Task :app:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preQaBuild UP-TO-DATE
+> Task :app:generateQaResValues
+> Task :app:mapQaSourceSetPaths
+> Task :app:generateQaResources
+> Task :app:checkQaAarMetadata
+> Task :app:packageQaResources
+> Task :app:createQaCompatibleScreenManifests
+> Task :app:extractDeepLinksQa
+> Task :app:parseQaLocalResources
+> Task :app:processQaMainManifest
+> Task :app:processQaManifest
+> Task :app:preQaAndroidTestBuild SKIPPED
+> Task :app:javaPreCompileQa
+> Task :app:mergeQaResources
+> Task :app:checkQaAndroidTestAarMetadata
+> Task :app:generateQaAndroidTestResValues
+> Task :app:mapQaAndroidTestSourceSetPaths
+> Task :app:generateQaAndroidTestResources
+> Task :app:processQaManifestForPackage
+> Task :app:processQaAndroidTestManifest
+> Task :app:javaPreCompileQaAndroidTest
+> Task :app:mergeQaShaders
+> Task :app:compileQaShaders NO-SOURCE
+> Task :app:generateQaAssets UP-TO-DATE
+> Task :app:mergeQaAndroidTestResources
+> Task :app:mergeQaAssets
+> Task :app:compressQaAssets
+> Task :app:desugarQaFileDependencies
+> Task :app:mergeQaJniLibFolders
+> Task :app:validateSigningQa
+> Task :app:mergeQaNativeLibs
+> Task :app:writeQaAppMetadata
+> Task :app:writeQaSigningConfigVersions
+> Task :app:checkQaDuplicateClasses
+
+> Task :app:stripQaDebugSymbols
+Unable to strip the following libraries, packaging them as they are: libandroidx.graphics.path.so. Run with --info option to learn more.
+
+> Task :app:mergeQaAndroidTestShaders
+> Task :app:compileQaAndroidTestShaders NO-SOURCE
+> Task :app:generateQaAndroidTestAssets UP-TO-DATE
+> Task :app:mergeLibDexQa
+> Task :app:mergeQaAndroidTestAssets
+> Task :app:desugarQaAndroidTestFileDependencies
+> Task :app:checkQaAndroidTestDuplicateClasses
+> Task :app:mergeQaAndroidTestJniLibFolders
+> Task :app:compressQaAndroidTestAssets
+> Task :app:mergeLibDexQaAndroidTest
+> Task :app:mergeQaAndroidTestNativeLibs NO-SOURCE
+> Task :app:stripQaAndroidTestDebugSymbols NO-SOURCE
+> Task :app:validateSigningQaAndroidTest
+> Task :app:writeQaAndroidTestSigningConfigVersions
+> Task :app:processQaAndroidTestResources
+> Task :app:processQaResources
+> Task :app:mergeExtDexQaAndroidTest
+> Task :app:mergeExtDexQa
+> Task :app:compileQaKotlin
+> Task :app:compileQaJavaWithJavac NO-SOURCE
+> Task :app:bundleQaClassesToCompileJar
+> Task :app:dexBuilderQa
+> Task :app:mergeQaGlobalSynthetics
+> Task :app:processQaJavaRes
+> Task :app:mergeProjectDexQa
+> Task :app:mergeQaJavaResource
+> Task :app:packageQa
+> Task :app:createQaApkListingFileRedirect
+> Task :app:compileQaAndroidTestKotlin
+> Task :app:compileQaAndroidTestJavaWithJavac NO-SOURCE
+> Task :app:dexBuilderQaAndroidTest
+> Task :app:mergeProjectDexQaAndroidTest
+> Task :app:mergeQaAndroidTestGlobalSynthetics
+> Task :app:processQaAndroidTestJavaRes
+> Task :app:mergeQaAndroidTestJavaResource
+> Task :app:packageQaAndroidTest
+> Task :app:createQaAndroidTestApkListingFileRedirect
+
+> Task :app:connectedQaAndroidTest
+Starting 18 tests on Pixel_6_API_33(AVD) - 13
+
+Pixel_6_API_33(AVD) - 13 Tests 0/18 completed. (0 skipped) (0 failed)
+Pixel_6_API_33(AVD) - 13 Tests 1/18 completed. (0 skipped) (0 failed)
+Pixel_6_API_33(AVD) - 13 Tests 2/18 completed. (0 skipped) (0 failed)
+Pixel_6_API_33(AVD) - 13 Tests 3/18 completed. (0 skipped) (0 failed)
+Pixel_6_API_33(AVD) - 13 Tests 4/18 completed. (0 skipped) (0 failed)
+Pixel_6_API_33(AVD) - 13 Tests 5/18 completed. (0 skipped) (0 failed)
+Pixel_6_API_33(AVD) - 13 Tests 6/18 completed. (0 skipped) (0 failed)
+Pixel_6_API_33(AVD) - 13 Tests 7/18 completed. (0 skipped) (0 failed)
+Pixel_6_API_33(AVD) - 13 Tests 8/18 completed. (0 skipped) (0 failed)
+Pixel_6_API_33(AVD) - 13 Tests 9/18 completed. (0 skipped) (0 failed)
+Pixel_6_API_33(AVD) - 13 Tests 10/18 completed. (0 skipped) (0 failed)
+Pixel_6_API_33(AVD) - 13 Tests 11/18 completed. (0 skipped) (0 failed)
+Pixel_6_API_33(AVD) - 13 Tests 12/18 completed. (0 skipped) (0 failed)
+
+> Task :app:connectedQaAndroidTest
+
+com.iptv.app.AppFlowTest > tvSidebarExpandsWithoutLosingRemoteFocus[Pixel_6_API_33(AVD) - 13] [33mSKIPPED [0m
+
+Pixel_6_API_33(AVD) - 13 Tests 15/18 completed. (1 skipped) (0 failed)
+Pixel_6_API_33(AVD) - 13 Tests 16/18 completed. (1 skipped) (0 failed)
+Finished 19 tests on Pixel_6_API_33(AVD) - 13
+
+BUILD SUCCESSFUL in 4m 42s
+63 actionable tasks: 63 executed

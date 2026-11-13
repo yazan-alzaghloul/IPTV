@@ -1,0 +1,68 @@
+Building for debugging...
+[1 / 10]
+[2 / 11] IPTVCore
+[4 / 13] IPTVCore
+[7 / 14] IPTVCore
+[10 / 14] IPTVCoreTests-product
+[12 / 16] IPTVCoreTests-product
+[17 / 19] IPTVCoreTests-product
+Build complete! (2.30 sec)
+Test Suite 'All tests' started at 2026-11-13 00:40:26.186.
+Test Suite 'IPTVCoreTests.xctest' started at 2026-11-13 00:40:26.188.
+Test Suite 'DomainTests' started at 2026-11-13 00:40:26.188.
+Test Case '-[IPTVCoreTests.DomainTests testAppearanceValidationAndCrossPlatformSchema]' started.
+Test Case '-[IPTVCoreTests.DomainTests testAppearanceValidationAndCrossPlatformSchema]' passed (0.002 seconds).
+Test Case '-[IPTVCoreTests.DomainTests testCompletionAndLiveResume]' started.
+Test Case '-[IPTVCoreTests.DomainTests testCompletionAndLiveResume]' passed (0.000 seconds).
+Test Case '-[IPTVCoreTests.DomainTests testHistorySearchBoundsAndWatchedReset]' started.
+Test Case '-[IPTVCoreTests.DomainTests testHistorySearchBoundsAndWatchedReset]' passed (0.003 seconds).
+Test Case '-[IPTVCoreTests.DomainTests testMetadataAndTrailerSafety]' started.
+Test Case '-[IPTVCoreTests.DomainTests testMetadataAndTrailerSafety]' passed (0.001 seconds).
+Test Case '-[IPTVCoreTests.DomainTests testNormalizePreservesPathSchemeAndPortOverride]' started.
+Test Case '-[IPTVCoreTests.DomainTests testNormalizePreservesPathSchemeAndPortOverride]' passed (0.001 seconds).
+Test Case '-[IPTVCoreTests.DomainTests testRecommendationsRequireActualSignalsAndExcludeKnown]' started.
+Test Case '-[IPTVCoreTests.DomainTests testRecommendationsRequireActualSignalsAndExcludeKnown]' passed (0.000 seconds).
+Test Case '-[IPTVCoreTests.DomainTests testRejectsInvalidInputs]' started.
+Test Case '-[IPTVCoreTests.DomainTests testRejectsInvalidInputs]' passed (0.000 seconds).
+Test Case '-[IPTVCoreTests.DomainTests testResumeSurvivesHistoryEvictionAndClearResetsRecentProgress]' started.
+Test Case '-[IPTVCoreTests.DomainTests testResumeSurvivesHistoryEvictionAndClearResetsRecentProgress]' passed (0.002 seconds).
+Test Case '-[IPTVCoreTests.DomainTests testRetryBudgetDoesNotResetOnSuccess]' started.
+Test Case '-[IPTVCoreTests.DomainTests testRetryBudgetDoesNotResetOnSuccess]' passed (0.000 seconds).
+Test Case '-[IPTVCoreTests.DomainTests testSeriesContinuationUsesExactParentAndNextUnwatched]' started.
+Test Case '-[IPTVCoreTests.DomainTests testSeriesContinuationUsesExactParentAndNextUnwatched]' passed (0.000 seconds).
+Test Case '-[IPTVCoreTests.DomainTests testStreamSegmentsAndContainers]' started.
+Test Case '-[IPTVCoreTests.DomainTests testStreamSegmentsAndContainers]' passed (0.004 seconds).
+Test Suite 'DomainTests' passed at 2026-11-13 00:40:26.202.
+	 Executed 11 tests, with 0 failures (0 unexpected) in 0.013 (0.014) seconds
+Test Suite 'PersistenceTests' started at 2026-11-13 00:40:26.202.
+Test Case '-[IPTVCoreTests.PersistenceTests testCatalogPagingFacetsLiteralSearchAndAccountIsolation]' started.
+Test Case '-[IPTVCoreTests.PersistenceTests testCatalogPagingFacetsLiteralSearchAndAccountIsolation]' passed (0.017 seconds).
+Test Case '-[IPTVCoreTests.PersistenceTests testLibrarySurvivesReopenAndSignOutRemovesData]' started.
+Test Case '-[IPTVCoreTests.PersistenceTests testLibrarySurvivesReopenAndSignOutRemovesData]' passed (0.004 seconds).
+Test Suite 'PersistenceTests' passed at 2026-11-13 00:40:26.223.
+	 Executed 2 tests, with 0 failures (0 unexpected) in 0.021 (0.021) seconds
+Test Suite 'ProviderTests' started at 2026-11-13 00:40:26.223.
+Test Case '-[IPTVCoreTests.ProviderTests testCatalogToleratesNumericNullFieldsAndDeduplicates]' started.
+Test Case '-[IPTVCoreTests.ProviderTests testCatalogToleratesNumericNullFieldsAndDeduplicates]' passed (0.005 seconds).
+Test Case '-[IPTVCoreTests.ProviderTests testEpisodeParsingKeepsParentAndSeasonOrder]' started.
+Test Case '-[IPTVCoreTests.ProviderTests testEpisodeParsingKeepsParentAndSeasonOrder]' passed (0.001 seconds).
+Test Case '-[IPTVCoreTests.ProviderTests testExpiredDisabledAndDeniedAccounts]' started.
+Test Case '-[IPTVCoreTests.ProviderTests testExpiredDisabledAndDeniedAccounts]' passed (0.001 seconds).
+Test Case '-[IPTVCoreTests.ProviderTests testGuideDecodesBase64AndRejectsInvalidIntervals]' started.
+Test Case '-[IPTVCoreTests.ProviderTests testGuideDecodesBase64AndRejectsInvalidIntervals]' passed (0.001 seconds).
+Test Case '-[IPTVCoreTests.ProviderTests testHTTPAndMalformedFailuresAreSanitized]' started.
+Test Case '-[IPTVCoreTests.ProviderTests testHTTPAndMalformedFailuresAreSanitized]' passed (0.001 seconds).
+Test Case '-[IPTVCoreTests.ProviderTests testNetworkFailureDoesNotExposeCredentialURL]' started.
+Test Case '-[IPTVCoreTests.ProviderTests testNetworkFailureDoesNotExposeCredentialURL]' passed (0.001 seconds).
+Test Case '-[IPTVCoreTests.ProviderTests testValidationEncodesQueryAndPreservesBasePath]' started.
+Test Case '-[IPTVCoreTests.ProviderTests testValidationEncodesQueryAndPreservesBasePath]' passed (0.000 seconds).
+Test Suite 'ProviderTests' passed at 2026-11-13 00:40:26.233.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 0.010 (0.010) seconds
+Test Suite 'IPTVCoreTests.xctest' passed at 2026-11-13 00:40:26.233.
+	 Executed 20 tests, with 0 failures (0 unexpected) in 0.043 (0.045) seconds
+Test Suite 'All tests' passed at 2026-11-13 00:40:26.233.
+	 Executed 20 tests, with 0 failures (0 unexpected) in 0.043 (0.047) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

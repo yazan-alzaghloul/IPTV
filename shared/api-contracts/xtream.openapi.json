@@ -1,0 +1,34 @@
+{
+  "openapi": "3.0.3",
+  "info": { "title": "IPTV Xtream provider contract", "version": "1.0.0", "description": "Observed Android contract. Provider URLs may have a base path. All responses are provider-controlled and tolerate numeric/string/null scalar fields. No provider credentials are bundled." },
+  "servers": [{ "url": "https://provider.example/base" }],
+  "paths": {
+    "/player_api.php": { "get": {
+      "operationId": "providerRequest",
+      "parameters": [
+        { "name": "username", "in": "query", "required": true, "schema": { "type": "string" } },
+        { "name": "password", "in": "query", "required": true, "schema": { "type": "string", "format": "password" } },
+        { "name": "action", "in": "query", "schema": { "type": "string", "enum": ["get_live_categories", "get_live_streams", "get_vod_categories", "get_vod_streams", "get_series_categories", "get_series", "get_vod_info", "get_series_info", "get_short_epg"] } },
+        { "name": "vod_id", "in": "query", "schema": { "type": "string" } },
+        { "name": "series_id", "in": "query", "schema": { "type": "string" } },
+        { "name": "stream_id", "in": "query", "schema": { "type": "string" } },
+        { "name": "limit", "in": "query", "schema": { "type": "integer", "default": 8 } }
+      ],
+      "responses": {
+        "200": { "description": "Without action: user_info.auth=1, status=Active and future/null/zero exp_date. Categories/catalog: arrays. Details: info/movie_data/episodes. EPG: epg_listings with start_timestamp and stop_timestamp or end_timestamp (Unix seconds).", "content": { "application/json": { "schema": { "oneOf": [{ "type": "object", "additionalProperties": true }, { "type": "array", "items": { "type": "object", "additionalProperties": true } }] } } } },
+        "401": { "description": "Access denied" }, "403": { "description": "Access denied" }, "404": { "description": "Base path/API missing" }, "500": { "description": "Provider unavailable" }
+      }
+    } },
+    "/{route}/{username}/{password}/{stream}": { "get": {
+      "operationId": "playStream",
+      "description": "Each path component is percent-encoded individually. Live defaults to m3u8 and can request ts; movies and episodes use sanitized provider container extensions. No DRM license endpoint is defined by this repository.",
+      "parameters": [
+        { "name": "route", "in": "path", "required": true, "schema": { "type": "string", "enum": ["live", "movie", "series"] } },
+        { "name": "username", "in": "path", "required": true, "schema": { "type": "string" } },
+        { "name": "password", "in": "path", "required": true, "schema": { "type": "string", "format": "password" } },
+        { "name": "stream", "in": "path", "required": true, "schema": { "type": "string", "example": "123.m3u8" } }
+      ],
+      "responses": { "200": { "description": "Provider media or HLS playlist" }, "206": { "description": "Partial media data" }, "403": { "description": "Subscription/stream refused" } }
+    } }
+  }
+}
