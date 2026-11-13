@@ -74,7 +74,7 @@ private fun Section.icon(): ImageVector = when (this) {
                 Column(Modifier.wrapContentWidth(Alignment.Start, unbounded = true).width(if (tv && !sidebarFocused) 88.dp else if (tv) 224.dp else 184.dp)
                     .fillMaxHeight().background(Panel).onFocusChanged { sidebarFocused = it.hasFocus }.focusGroup()
                     .verticalScroll(rememberScrollState()).padding(horizontal = 12.dp, vertical = 20.dp), verticalArrangement = Arrangement.spacedBy(8.dp)) {
-                    Text(if (tv && !sidebarFocused) "◈" else "IPTV", Modifier.padding(12.dp), style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Black, color = AccentInk)
+                    Text(if (tv && !sidebarFocused) "◈" else stringResource(R.string.ui_iptv), Modifier.padding(12.dp), style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Black, color = AccentInk)
                     Section.entries.forEach { entry ->
                         val label = sectionTitle(entry)
                         NavigationDrawerItem(label = { if (!tv || sidebarFocused) Text(uiLabel(label), maxLines = 1, overflow = TextOverflow.Ellipsis) }, selected = s.section == entry,

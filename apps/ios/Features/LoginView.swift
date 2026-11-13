@@ -11,7 +11,7 @@ struct LoginView: View {
   var body: some View {
     ScrollView {
       VStack(alignment: .leading, spacing: 18) {
-        Text("IPTV").font(.largeTitle.bold()).foregroundStyle(Cinema.accentText)
+        Text("Rayan TV").font(.largeTitle.bold()).foregroundStyle(Cinema.accentText)
         Text(localized("Your channels. One place.")).font(.title.bold())
         Text(localized("Sign in with your IPTV provider’s Xtream account.")).foregroundStyle(
           CinemaSecondary())

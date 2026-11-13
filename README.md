@@ -1,4 +1,4 @@
-# IPTV — native Android and iOS
+# Rayan TV — native Android and iOS
 
 A monorepo containing a Kotlin/Compose Android app and a Swift/SwiftUI iPhone/iPad app for an IPTV provider's Xtream account. Both use the same provider API, cinematic purple/cyan identity, and local viewing library. No subscription, content, production credentials, analytics, or custom backend is bundled.
 
@@ -80,3 +80,16 @@ Recording, downloads, casting, catch-up, M3U/XMLTV imports, multi-account profil
 ## Architecture and automation
 
 Read [the assessment and plan](shared/documentation/MIGRATION_PLAN.md), [architecture decisions](shared/documentation/ARCHITECTURE.md), [design specification](shared/documentation/DESIGN.md), and [CI/signing guide](shared/documentation/CI.md). GitHub workflows use platform paths so Android-only changes do not build iOS and iOS-only changes do not build Android. Shared API/design changes validate both clients; shared documentation changes run lightweight shared checks. CI configuration is supplied; remote runs are not claimed as passed without a GitHub result.
+
+## Web application
+
+The browser client lives in `apps/web` with shared TypeScript packages in `packages`. Android and iOS keep their independent native build commands.
+
+```sh
+pnpm install --frozen-lockfile
+cp apps/web/.env.example apps/web/.env.local
+# Configure the provider allowlist and session secret.
+pnpm dev:web
+```
+
+See [Web deployment](shared/documentation/web/DEPLOYMENT.md), [architecture](shared/documentation/web/ARCHITECTURE.md), [three-platform parity](shared/documentation/web/FEATURE_PARITY.md), and [executed validation](shared/documentation/web/VALIDATION.md).

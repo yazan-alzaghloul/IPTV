@@ -78,7 +78,6 @@
 "\"High contrast\"" = "\"تباين عالٍ\"";
 "\"Home\"" = "\"الرئيسية\"";
 "\"Host or provider URL\"" = "\"عنوان مزود الخدمة\"";
-"\"IPTV\"" = "\"IPTV\"";
 "\"Import appearance\"" = "\"استيراد إعدادات المظهر\"";
 "\"Increase contrast for secondary text.\"" = "\"زيادة تباين النص الثانوي.\"";
 "\"Info\"" = "\"معلومات\"";
@@ -149,6 +148,7 @@
 "\"Provider rating\"" = "\"تقييم المزود\"";
 "\"Provider subtitles\"" = "\"الترجمة المتاحة من المزود\"";
 "\"Quality\"" = "\"الجودة\"";
+"\"Rayan TV\"" = "\"Rayan TV\"";
 "\"Recently added movies\"" = "\"الأفلام المضافة مؤخراً\"";
 "\"Recently added\"" = "\"المضافة مؤخراً\"";
 "\"Recently watched channels\"" = "\"القنوات المشاهَدة مؤخراً\"";
@@ -256,7 +256,7 @@
 "Channel +" = "Channel +";
 "Channel guide" = "دليل القناة";
 "Channel −" = "Channel −";
-"Check available device storage and reopen IPTV." = "تحقق من مساحة التخزين المتاحة وأعد فتح التطبيق.";
+"Check available device storage and reopen Rayan TV." = "تحقق من مساحة التخزين المتاحة وأعد فتح Rayan TV.";
 "Choose HTTP or HTTPS." = "Choose HTTP or HTTPS.";
 "Cinematic dark" = "Cinematic dark";
 "Clear artwork cache" = "Clear artwork cache";
@@ -361,6 +361,7 @@
 "Provider rating" = "تقييم المزود";
 "Quality" = "Quality";
 "Rated only" = "العناوين المقيمة فقط";
+"Rayan TV" = "Rayan TV";
 "Refresh" = "Refresh";
 "Refresh guide" = "Refresh guide";
 "Refresh library" = "Refresh library";

@@ -78,7 +78,6 @@
 "\"High contrast\"" = "\"High contrast\"";
 "\"Home\"" = "\"Home\"";
 "\"Host or provider URL\"" = "\"Host or provider URL\"";
-"\"IPTV\"" = "\"IPTV\"";
 "\"Import appearance\"" = "\"Import appearance\"";
 "\"Increase contrast for secondary text.\"" = "\"Increase contrast for secondary text.\"";
 "\"Info\"" = "\"Info\"";
@@ -149,6 +148,7 @@
 "\"Provider rating\"" = "\"Provider rating\"";
 "\"Provider subtitles\"" = "\"Provider subtitles\"";
 "\"Quality\"" = "\"Quality\"";
+"\"Rayan TV\"" = "\"Rayan TV\"";
 "\"Recently added movies\"" = "\"Recently added movies\"";
 "\"Recently added\"" = "\"Recently added\"";
 "\"Recently watched channels\"" = "\"Recently watched channels\"";
@@ -256,7 +256,7 @@
 "Channel +" = "Channel +";
 "Channel guide" = "Channel guide";
 "Channel −" = "Channel −";
-"Check available device storage and reopen IPTV." = "Check available device storage and reopen IPTV.";
+"Check available device storage and reopen Rayan TV." = "Check available device storage and reopen Rayan TV.";
 "Choose HTTP or HTTPS." = "Choose HTTP or HTTPS.";
 "Cinematic dark" = "Cinematic dark";
 "Clear artwork cache" = "Clear artwork cache";
@@ -361,6 +361,7 @@
 "Provider rating" = "Provider rating";
 "Quality" = "Quality";
 "Rated only" = "Rated only";
+"Rayan TV" = "Rayan TV";
 "Refresh" = "Refresh";
 "Refresh guide" = "Refresh guide";
 "Refresh library" = "Refresh library";

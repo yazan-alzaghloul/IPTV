@@ -142,7 +142,7 @@ struct SettingsView: View {
     }.navigationTitle(localized("Settings"))
       .fileExporter(
         isPresented: $exporting, document: document, contentType: .json,
-        defaultFilename: "IPTV-appearance"
+        defaultFilename: "Rayan-TV-appearance"
       ) { result in
         switch result {
         case .success: message = localized("Appearance exported.")

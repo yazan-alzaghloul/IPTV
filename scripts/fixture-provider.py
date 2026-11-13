@@ -6,6 +6,7 @@ from urllib.parse import urlparse, parse_qs
 import argparse, base64, json, time
 ASSETS = Path(__file__).resolve().parents[1]/'apps/android/app/src/androidTest/assets'
 HLS = Path(__file__).resolve().parents[1]/'shared/test-fixtures/hls'
+CATALOG_SIZE = 1
 class Handler(BaseHTTPRequestHandler):
     def log_message(self, *_): pass  # Requests can contain credentials. Never log URLs.
     def do_GET(self):
@@ -21,7 +22,7 @@ class Handler(BaseHTTPRequestHandler):
             bodies={
                 '':{'user_info':{'auth':1,'status':'Active'}},
                 'get_live_streams':[item(1,'Fixture News','live'),item(5,'Fixture Sports','live')],
-                'get_vod_streams':[item(2,'Fixture Movie','movie')],
+                'get_vod_streams':[item(2,'Fixture Movie','movie')]+[item(1000+n,f'Catalog Movie {n:03d}','movie') for n in range(1,CATALOG_SIZE)],
                 'get_series':[item(3,'Fixture Series','series')],
                 'get_vod_info':{'info':{'plot':'Fixture movie plot','cast':'Fixture Cast','director':'Fixture Director','genre':'Drama','rating':'8.0','year':'2026','duration':'00:00:01','backdrop_path':[base+'/poster.jpg']},'movie_data':{'container_extension':'mp4'}},
                 'get_series_info':{'info':{'plot':'Fixture series plot','genre':'Drama'},'episodes':{'1':[{'id':4,'title':'Pilot','episode_num':1,'container_extension':'mp4','info':{'plot':'First episode overview','duration_secs':1}},{'id':6,'title':'Second episode','episode_num':2,'container_extension':'mp4'}],'2':[{'id':7,'title':'New season','episode_num':1,'container_extension':'mp4'}]}},
@@ -55,7 +56,8 @@ class Handler(BaseHTTPRequestHandler):
         try: self.wfile.write(data)
         except (BrokenPipeError,ConnectionResetError): pass
 if __name__=='__main__':
-    parser=argparse.ArgumentParser(); parser.add_argument('--port',type=int,default=18765); parser.add_argument('--port-file'); args=parser.parse_args()
+    parser=argparse.ArgumentParser(); parser.add_argument('--port',type=int,default=18765); parser.add_argument('--port-file'); parser.add_argument('--catalog-size',type=int,default=1); args=parser.parse_args()
+    CATALOG_SIZE = min(10000,max(1,args.catalog_size))
     server=ThreadingHTTPServer(('127.0.0.1',args.port),Handler)
     if args.port_file: Path(args.port_file).write_text(str(server.server_address[1]))
     print(f'Fixture listening on 127.0.0.1:{server.server_address[1]}',flush=True); server.serve_forever()

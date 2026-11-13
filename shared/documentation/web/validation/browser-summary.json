@@ -1,0 +1,90 @@
+{
+  "date": "2026-11-13",
+  "stats": {
+    "startTime": "2026-11-13T19:50:35.289Z",
+    "duration": 28814.891000000003,
+    "expected": 12,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "projects": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "tests": [
+    {
+      "project": "chromium",
+      "title": "real provider, catalogs, library, guide, series and logout",
+      "status": "expected",
+      "durationMs": 3429
+    },
+    {
+      "project": "firefox",
+      "title": "real provider, catalogs, library, guide, series and logout",
+      "status": "expected",
+      "durationMs": 3197
+    },
+    {
+      "project": "webkit",
+      "title": "real provider, catalogs, library, guide, series and logout",
+      "status": "expected",
+      "durationMs": 2499
+    },
+    {
+      "project": "chromium",
+      "title": "real H264 MP4 playback and live HLS through credential-free relay",
+      "status": "expected",
+      "durationMs": 2806
+    },
+    {
+      "project": "firefox",
+      "title": "real H264 MP4 playback and live HLS through credential-free relay",
+      "status": "expected",
+      "durationMs": 3015
+    },
+    {
+      "project": "webkit",
+      "title": "real H264 MP4 playback and live HLS through credential-free relay",
+      "status": "expected",
+      "durationMs": 2737
+    },
+    {
+      "project": "chromium",
+      "title": "responsive keyboard and accessibility checks",
+      "status": "expected",
+      "durationMs": 1897
+    },
+    {
+      "project": "firefox",
+      "title": "responsive keyboard and accessibility checks",
+      "status": "expected",
+      "durationMs": 2183
+    },
+    {
+      "project": "webkit",
+      "title": "responsive keyboard and accessibility checks",
+      "status": "expected",
+      "durationMs": 2229
+    },
+    {
+      "project": "chromium",
+      "title": "API rejects missing auth, unapproved providers and cross-site mutation",
+      "status": "expected",
+      "durationMs": 28
+    },
+    {
+      "project": "firefox",
+      "title": "API rejects missing auth, unapproved providers and cross-site mutation",
+      "status": "expected",
+      "durationMs": 30
+    },
+    {
+      "project": "webkit",
+      "title": "API rejects missing auth, unapproved providers and cross-site mutation",
+      "status": "expected",
+      "durationMs": 28
+    }
+  ]
+}

@@ -16,3 +16,13 @@
 .validation/
 dist/IPTV-1.2-source.zip
 **/__pycache__/
+
+# Web workspaces and local secrets
+node_modules/
+**/.next/
+**/out/
+**/*.tsbuildinfo
+**/playwright-report/
+**/test-results/
+**/.env*
+!**/.env.example

@@ -1,0 +1,11 @@
+.git
+**/node_modules
+**/.next
+**/.env*
+.validation
+apps/android
+apps/ios
+**/build
+**/.build
+**/test-results
+**/playwright-report

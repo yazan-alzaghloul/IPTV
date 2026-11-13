@@ -1,0 +1,38 @@
+name: Web
+on:
+  push:
+    paths: ['apps/web/**', 'packages/**', 'shared/api-contracts/**', 'shared/design-tokens/**', 'shared/test-fixtures/**', 'scripts/fixture-provider.py', 'package.json', 'pnpm-lock.yaml', 'pnpm-workspace.yaml', '.github/workflows/web.yml']
+  pull_request:
+    paths: ['apps/web/**', 'packages/**', 'shared/api-contracts/**', 'shared/design-tokens/**', 'shared/test-fixtures/**', 'scripts/fixture-provider.py', 'package.json', 'pnpm-lock.yaml', 'pnpm-workspace.yaml', '.github/workflows/web.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: web-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: pnpm/action-setup@v6.1.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '26'
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm peers check
+      - run: pnpm check:web
+      - run: pnpm --filter @rayan/web format:check
+      - run: pnpm build:web
+      - run: pnpm --filter @rayan/web exec playwright install --with-deps chromium firefox webkit
+      - run: pnpm test:web:e2e
+      - uses: actions/upload-artifact@v7.0.2
+        if: always()
+        with:
+          name: web-browser-report
+          path: |
+            apps/web/playwright-report
+            apps/web/test-results
+          retention-days: 7

@@ -10,7 +10,7 @@ import SwiftUI
       case .failure:
         ContentUnavailableView(
           localized("Storage unavailable"), systemImage: "externaldrive.badge.exclamationmark",
-          description: Text(localized("Check available device storage and reopen IPTV.")))
+          description: Text(localized("Check available device storage and reopen Rayan TV.")))
       }
     }
   }
@@ -66,7 +66,7 @@ struct AppShell: View {
           List(Section.allCases, selection: $selection) { section in
             Label(localized(section.title), systemImage: section.icon).tag(section)
           }
-          .navigationTitle("IPTV")
+          .navigationTitle("Rayan TV")
           .onChange(of: selection) { _, value in if let value { model.section = value } }
           .onChange(of: model.section) { _, value in selection = value }
         } detail: {

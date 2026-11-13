@@ -92,7 +92,7 @@ import kotlinx.coroutines.*
                 message = "Artwork cache cleared."
             }
         } }
-        item { Action(stringResource(R.string.ui_export_appearance), Modifier.fillMaxWidth()) { export.launch("IPTV-appearance.json") } }
+        item { Action(stringResource(R.string.ui_export_appearance), Modifier.fillMaxWidth()) { export.launch("Rayan-TV-appearance.json") } }
         item { Action(stringResource(R.string.ui_import_appearance), Modifier.fillMaxWidth()) { import.launch(arrayOf("application/json", "text/plain")) } }
         item { Action(stringResource(R.string.ui_reset_appearance), Modifier.fillMaxWidth()) { update(Appearance()); message = "Appearance reset." } }
         message?.let { text -> item { Text(uiLabel(text), color = AccentInk) } }

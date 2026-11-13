@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Rayan TV</string>
     <string name="ui_home">"Home"</string>
     <string name="ui_live_tv">"Live TV"</string>
     <string name="ui_movies">"Movies"</string>
@@ -33,7 +34,7 @@
     <string name="ui_remove_history_progress">"Remove history &amp; progress"</string>
     <string name="ui_close">"Close"</string>
     <string name="ui_clear_history">"Clear history"</string>
-    <string name="ui_iptv">"IPTV"</string>
+    <string name="ui_iptv">"Rayan TV"</string>
     <string name="ui_your_channels_one_place">"Your channels. One place."</string>
     <string name="ui_sign_in_with_your_iptv_provider_s_xtream_account">"Sign in with your IPTV provider’s Xtream account."</string>
     <string name="ui_https">"HTTPS"</string>
