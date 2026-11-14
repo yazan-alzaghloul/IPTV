@@ -349,7 +349,7 @@
 		"17C4C6AFA6A2F187F1AE62C9" = {
 			"isa" = "XCBuildConfiguration";
 			"buildSettings" = {
-				"PRODUCT_BUNDLE_IDENTIFIER" = "com.iptv.ios";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.yazanalzaghloul.iptv";
 				"PRODUCT_NAME" = "$(TARGET_NAME)";
 				"SWIFT_VERSION" = "5.0";
 				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
@@ -379,7 +379,7 @@
 		"E6C7FD033C70C8B5652B6B50" = {
 			"isa" = "XCBuildConfiguration";
 			"buildSettings" = {
-				"PRODUCT_BUNDLE_IDENTIFIER" = "com.iptv.ios";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.yazanalzaghloul.iptv";
 				"PRODUCT_NAME" = "$(TARGET_NAME)";
 				"SWIFT_VERSION" = "5.0";
 				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
@@ -470,7 +470,7 @@
 		"CCAAE05F55B8E86F17FAF2EC" = {
 			"isa" = "XCBuildConfiguration";
 			"buildSettings" = {
-				"PRODUCT_BUNDLE_IDENTIFIER" = "com.iptv.ios.IPTVTests";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.yazanalzaghloul.iptv.IPTVTests";
 				"PRODUCT_NAME" = "$(TARGET_NAME)";
 				"SWIFT_VERSION" = "5.0";
 				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
@@ -495,7 +495,7 @@
 		"2C6303C01382E70FC2D0B6C9" = {
 			"isa" = "XCBuildConfiguration";
 			"buildSettings" = {
-				"PRODUCT_BUNDLE_IDENTIFIER" = "com.iptv.ios.IPTVTests";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.yazanalzaghloul.iptv.IPTVTests";
 				"PRODUCT_NAME" = "$(TARGET_NAME)";
 				"SWIFT_VERSION" = "5.0";
 				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
@@ -593,7 +593,7 @@
 		"77B0B80DDFA1FB571E082E6F" = {
 			"isa" = "XCBuildConfiguration";
 			"buildSettings" = {
-				"PRODUCT_BUNDLE_IDENTIFIER" = "com.iptv.ios.IPTVUITests";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.yazanalzaghloul.iptv.IPTVUITests";
 				"PRODUCT_NAME" = "$(TARGET_NAME)";
 				"SWIFT_VERSION" = "5.0";
 				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
@@ -616,7 +616,7 @@
 		"412A2C5C0A283DEA7E8D12BE" = {
 			"isa" = "XCBuildConfiguration";
 			"buildSettings" = {
-				"PRODUCT_BUNDLE_IDENTIFIER" = "com.iptv.ios.IPTVUITests";
+				"PRODUCT_BUNDLE_IDENTIFIER" = "com.yazanalzaghloul.iptv.IPTVUITests";
 				"PRODUCT_NAME" = "$(TARGET_NAME)";
 				"SWIFT_VERSION" = "5.0";
 				"IPHONEOS_DEPLOYMENT_TARGET" = "17.0";
