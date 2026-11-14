@@ -23,6 +23,7 @@ struct VideoQuality: Identifiable {
   @Published var pictureInPicture = false
   @Published var quality: Double = 0 { didSet { applyQuality() } }
   private var retries = RetryBudget()
+  private var playbackFailure: String?
   private var statusObservation: NSKeyValueObservation?
   private var bufferingObservation: NSKeyValueObservation?
   private var checkpoint: Any?
@@ -113,6 +114,7 @@ struct VideoQuality: Identifiable {
     generation = UUID()
     let token = generation
     error = nil
+    playbackFailure = nil
     buffering = true
     qualities = []
     locked = false
@@ -202,6 +204,14 @@ struct VideoQuality: Identifiable {
   }
   private func failed(_ error: Error?) {
     guard retryTask == nil else { return }
+    var failure = error as NSError?
+    var codes: [String] = []
+    for _ in 0..<6 {
+      guard let current = failure else { break }
+      codes.append("\(current.domain) (\(current.code))")
+      failure = current.userInfo[NSUnderlyingErrorKey] as? NSError
+    }
+    playbackFailure = codes.isEmpty ? "No underlying error was provided." : codes.joined(separator: " → ")
     locked = false
     buffering = false
     var underlying = error as NSError?
@@ -252,9 +262,11 @@ struct VideoQuality: Identifiable {
     let size = player.currentItem?.presentationSize ?? .zero
     let bitrate = player.currentItem?.accessLog()?.events.last?.observedBitrate ?? 0
     return [
-      "AVPlayer", "\(Int(size.width)) × \(Int(size.height))",
+      "AVPlayer", "Status: \(player.currentItem.map { String(describing: $0.status) } ?? "No item")",
+      "\(Int(size.width)) × \(Int(size.height))",
       "\(String(format: "%.1f", bitrate / 1_000_000)) Mbps",
       item.kind == .live ? (transportStream ? "MPEG-TS" : "HLS") : item.container.uppercased(),
+      playbackFailure.map { "Failure: \($0)" } ?? "No playback failure recorded.",
     ].joined(separator: "\n")
   }
   func foreground() { backgrounded = false }
